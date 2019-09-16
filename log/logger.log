@@ -1,0 +1,25 @@
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-09-15 18:58:00.198414' AND "django_session"."session_key" = '4x5rsaf1qowbr1o9ud8scl8ga5ps9ltb'); args=('2019-09-15 18:58:00.198414', '4x5rsaf1qowbr1o9ud8scl8ga5ps9ltb')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+(0.000) SELECT "basic_app_messagesinfo"."id", "basic_app_messagesinfo"."sender_msg_id", "basic_app_messagesinfo"."reciver_msg_id", "basic_app_messagesinfo"."message_body", "basic_app_messagesinfo"."subject", "basic_app_messagesinfo"."status", "basic_app_messagesinfo"."created_at" FROM "basic_app_messagesinfo" WHERE "basic_app_messagesinfo"."sender_msg_id" = 2; args=(2,)
+(0.000) SELECT "basic_app_messagesinfo"."id", "basic_app_messagesinfo"."sender_msg_id", "basic_app_messagesinfo"."reciver_msg_id", "basic_app_messagesinfo"."message_body", "basic_app_messagesinfo"."subject", "basic_app_messagesinfo"."status", "basic_app_messagesinfo"."created_at" FROM "basic_app_messagesinfo" WHERE "basic_app_messagesinfo"."reciver_msg_id" = 2; args=(2,)
+"GET /basic_app/my_messages/ HTTP/1.1" 200 2249
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-09-15 18:58:00.899931' AND "django_session"."session_key" = '4x5rsaf1qowbr1o9ud8scl8ga5ps9ltb'); args=('2019-09-15 18:58:00.899931', '4x5rsaf1qowbr1o9ud8scl8ga5ps9ltb')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+(0.000) SELECT "basic_app_messagesinfo"."id", "basic_app_messagesinfo"."sender_msg_id", "basic_app_messagesinfo"."reciver_msg_id", "basic_app_messagesinfo"."message_body", "basic_app_messagesinfo"."subject", "basic_app_messagesinfo"."status", "basic_app_messagesinfo"."created_at" FROM "basic_app_messagesinfo" WHERE ("basic_app_messagesinfo"."sender_msg_id" = 2 AND "basic_app_messagesinfo"."status" = 'unread'); args=(2, 'unread')
+(0.000) SELECT "basic_app_messagesinfo"."id", "basic_app_messagesinfo"."sender_msg_id", "basic_app_messagesinfo"."reciver_msg_id", "basic_app_messagesinfo"."message_body", "basic_app_messagesinfo"."subject", "basic_app_messagesinfo"."status", "basic_app_messagesinfo"."created_at" FROM "basic_app_messagesinfo" WHERE ("basic_app_messagesinfo"."reciver_msg_id" = 2 AND "basic_app_messagesinfo"."status" = 'unread'); args=(2, 'unread')
+"GET /basic_app/my_unread_messages/ HTTP/1.1" 200 1651
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-09-15 18:58:02.065344' AND "django_session"."session_key" = '4x5rsaf1qowbr1o9ud8scl8ga5ps9ltb'); args=('2019-09-15 18:58:02.065344', '4x5rsaf1qowbr1o9ud8scl8ga5ps9ltb')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+(0.000) SELECT "basic_app_messagesinfo"."id", "basic_app_messagesinfo"."sender_msg_id", "basic_app_messagesinfo"."reciver_msg_id", "basic_app_messagesinfo"."message_body", "basic_app_messagesinfo"."subject", "basic_app_messagesinfo"."status", "basic_app_messagesinfo"."created_at" FROM "basic_app_messagesinfo" WHERE "basic_app_messagesinfo"."sender_msg_id" = 2; args=(2,)
+(0.000) SELECT "basic_app_messagesinfo"."id", "basic_app_messagesinfo"."sender_msg_id", "basic_app_messagesinfo"."reciver_msg_id", "basic_app_messagesinfo"."message_body", "basic_app_messagesinfo"."subject", "basic_app_messagesinfo"."status", "basic_app_messagesinfo"."created_at" FROM "basic_app_messagesinfo" WHERE "basic_app_messagesinfo"."reciver_msg_id" = 2; args=(2,)
+"GET /basic_app/my_messages/ HTTP/1.1" 200 2249
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()

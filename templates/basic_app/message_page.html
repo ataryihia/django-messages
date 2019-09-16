@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+{% extends "basic_app/base.html"%}
+{% block body_block %}
+
+<div class="jumbotron">
+  <h1>My Messages:</h1>
+  <h3>Sent Messages records:</h3>
+  {% if msg_record %}
+  <table>
+    <th>Site Name</th>
+    <th>Date Accessed</th>
+    {% for acc in msg_record  %}
+    <tr>
+        <td>{{ acc.subject }}</td>
+        <td>{{ acc.message_body }}</td>
+        <td>{{ acc.created_at }}</td>
+        <td>{{ acc.sender_msg.username }}</td>
+        <td>{{ acc.reciver_msg.username }}</td>
+        <td><a href="{% url 'basic_app:delete_message' message_id=acc.id %}" >Delete Message</a></td>
+
+
+
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+      <p>No Messages Record Found!</p>
+  {% endif %}
+
+</div>
+{% endblock %}

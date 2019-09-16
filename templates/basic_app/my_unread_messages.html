@@ -1,0 +1,51 @@
+
+
+
+
+<!DOCTYPE html>
+{% extends "basic_app/base.html"%}
+{% block body_block %}
+
+<div class="jumbotron">
+  <h1>My Messages:</h1>
+  <h3>Sent Messages records:</h3>
+  {% if access_record %}
+  <table>
+    <th>Site Name</th>
+    <th>Date Accessed</th>
+    {% for acc in access_record  %}
+    <tr>
+
+        <td>{{ acc.id }}</td>
+        <td>{{ acc.message_body }}</td>
+        <td><a href="{% url 'basic_app:message_page' message_id=acc.id %}">Read</a></td>
+
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+      <p>No Messages Record Found!</p>
+  {% endif %}
+  <h3>Get Messages records:</h3>
+  {% if out_messages %}
+
+  <table>
+    <th>Site Name</th>
+    <th>Date Accessed</th>
+    {% for acc in out_messages  %}
+    <tr>
+        <td>{{ acc.id }}</td>
+        <td>{{ acc.message_body }}</td>
+        <td><a href="{% url 'basic_app:message_page' message_id=acc.id %}" >Read</a></td>
+
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+      <p>No Messages Record Found!</p>
+  {% endif %}
+
+
+
+</div>
+{% endblock %}
